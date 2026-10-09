@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b0d10">
+  <title>FRAME — Web Templates</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="index.html">FRAME<span>.</span></a>
+  <nav>
+    <a href="#templates">Templates</a>
+    <a href="#categories">Categories</a>
+    <a href="#pricing">Pricing</a>
+  </nav>
+  <div class="header-actions">
+    <button class="icon-btn" id="themeBtn" aria-label="Theme">◐</button><button class="icon-btn" id="settingsBtn" aria-label="Settings">⚙</button>
+    <a class="login" href="login.html">Sign in</a>
+    <a class="btn small" href="mailto:hello@example.com?subject=Li%C3%AAn%20h%E1%BB%87%20FRAME" data-i18n="contact.button">Liên hệ</a><a class="btn small" href="#templates">Browse</a>
+  </div>
+  <button class="menu-btn" id="menuBtn">☰</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow" data-i18n="hero.eyebrow">CURATED WEB TEMPLATES</div>
+      <h1>Build better.<br><span>Launch faster.</span></h1>
+      <p data-i18n="hero.desc">Giao diện website được thiết kế tinh gọn, responsive và sẵn sàng để bạn tùy chỉnh.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#templates"><span data-i18n="hero.explore">Explore templates</span></a>
+        <a class="text-btn" href="#categories"><span data-i18n="hero.categories">View categories →</span></a>
+      </div>
+    </div>
+    <div class="hero-preview">
+      <div class="browser">
+        <div class="browser-top"><i></i><i></i><i></i><span>preview.frame</span></div>
+        <div class="preview-content">
+          <div class="preview-line wide"></div>
+          <div class="preview-line"></div>
+          <div class="preview-grid"><b></b><b></b><b></b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div><strong>24+</strong><span data-i18n="stats.templates">Templates</span></div>
+    <div><strong>08</strong><span data-i18n="stats.categories">Categories</span></div>
+    <div><strong>100%</strong><span data-i18n="stats.responsive">Responsive</span></div>
+    <div><strong>24/7</strong><span data-i18n="stats.access">Access</span></div>
+  </section>
+
+  <section id="templates" class="section">
+    <div class="section-head">
+      <div><div class="eyebrow" data-i18n="featured.eyebrow">LATEST RELEASES</div><h2 data-i18n="featured.title">Featured templates</h2></div>
+      <a class="text-btn" href="products.html" data-i18n="common.viewall">View all →</a>
+    </div>
+    <div class="toolbar">
+      <div class="search"><span>⌕</span><input id="search" placeholder="Search templates..." data-i18n-placeholder="search.placeholder"></div>
+      <select id="categoryFilter">
+        <option value="all" data-i18n="filter.all">All categories</option>
+        <option value="business" data-i18n="cat.business">Business</option>
+        <option value="portfolio" data-i18n="cat.portfolio">Portfolio</option>
+        <option value="shop" data-i18n="cat.shop">E-commerce</option>
+        <option value="saas" data-i18n="cat.saas">SaaS</option>
+      </select>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <section id="categories" class="section categories">
+    <div class="section-head"><div><div class="eyebrow" data-i18n="categories.eyebrow">BROWSE BY TYPE</div><h2 data-i18n="categories.title">Categories</h2></div></div>
+    <div class="category-grid">
+      <a href="products.html?cat=business"><b data-i18n="cat.business">Business</b><span data-i18n="category.business.desc">Corporate & company</span><em>→</em></a>
+      <a href="products.html?cat=portfolio"><b data-i18n="cat.portfolio">Portfolio</b><span data-i18n="category.portfolio.desc">Personal & creative</span><em>→</em></a>
+      <a href="products.html?cat=shop"><b data-i18n="cat.shop">E-commerce</b><span data-i18n="category.shop.desc">Stores & products</span><em>→</em></a>
+      <a href="products.html?cat=saas"><b data-i18n="cat.saas">SaaS</b><span data-i18n="category.saas.desc">Software & startups</span><em>→</em></a>
+    </div>
+  </section>
+
+  <section id="pricing" class="section pricing">
+    <div class="section-head"><div><div class="eyebrow" data-i18n="pricing.eyebrow">SIMPLE PRICING</div><h2 data-i18n="pricing.title">Choose your license</h2></div></div>
+    <div class="price-grid">
+      <article><span>PERSONAL</span><h3 data-base-price="12000">12.000₫</h3><p>For personal projects.</p><hr><p>✓ 1 website<br>✓ Lifetime access<br>✓ Free updates</p><a class="btn outline" href="#">Choose</a></article>
+      <article class="featured"><label>POPULAR</label><span>PRO</span><h3 data-base-price="29000">29.000₫</h3><p>For freelancers & clients.</p><hr><p>✓ Unlimited projects<br>✓ Lifetime access<br>✓ Free updates<br>✓ Commercial use</p><a class="btn" href="#">Choose Pro</a></article>
+    </div>
+  </section>
+</main>
+
+<div class="settings-overlay" id="settingsOverlay">
+  <div class="settings-modal">
+    <button class="settings-close" id="settingsClose">×</button>
+    <div class="eyebrow" data-i18n="settings.eyebrow">PREFERENCES</div>
+    <h2 data-i18n="settings.title">Settings</h2>
+    <p class="settings-muted" data-i18n="settings.desc">Customize your experience.</p>
+    <div class="setting-row"><div><b data-i18n="settings.language">Language</b><span data-i18n="settings.language.desc">Choose the website language.</span></div>
+      <select id="languageSelect"><option value="en">English</option><option value="vi">Tiếng Việt</option></select>
+    </div>
+    <div class="setting-row"><div><b data-i18n="settings.appearance">Appearance</b><span data-i18n="settings.appearance.desc">Switch between light and dark mode.</span></div>
+      <button class="btn outline" id="modalThemeBtn" data-i18n="settings.theme">Toggle theme</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="logo">FRAME<span>.</span></div>
+  <p>Kho giao diện website hiện đại, dễ tùy chỉnh.</p>
+  <div><a href="mailto:hello@example.com?subject=Gi%E1%BA%A5y%20ph%C3%A9p%20FRAME">Giấy phép</a><a href="mailto:hello@example.com?subject=H%E1%BB%97%20tr%E1%BB%A3%20FRAME">Hỗ trợ</a><a href="mailto:hello@example.com?subject=Li%C3%AAn%20h%E1%BB%87%20FRAME">Liên hệ</a></div>
+  <small>© 2026 FRAME. All rights reserved.</small>
+</footer>
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
